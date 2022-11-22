@@ -53,7 +53,7 @@ function SingleItem({ item, setpopup }) {
         }
     }
     return (
-        <div class="card" id='card' key={item.index}>
+        <div className="card" id='card' key={item.index}>
             <Card.Body className='d-flex flex-column justify-content-between gap-2'>
                 <Stack>
                     <Card.Title>{item.title}</Card.Title>
@@ -66,6 +66,7 @@ function SingleItem({ item, setpopup }) {
                             show: true,
                             mode: 'edit',
                             value: {
+                                'status' : item.status,
                                 'index': item.index,
                                 'title': item.title,
                                 'des': item.des

@@ -11,12 +11,12 @@ function ToDoListItems({setpopup}) {
         setpopup({
             show:true,
             mode: 'todo',
-            value : null
+            value : null,
         });
     }
     return (
-        <Stack className="rounded-2 p-4 shadow-sm" id="list-containers" gap={2}>
-            <Stack><p className="display-6">Todos</p></Stack>
+        <Stack className="rounded-2 p-4 shadow-sm gap-3" id="list-containers" gap={2}>
+            <Stack id='header-holder'><p className="display-6">Todos</p></Stack>
             <div className="d-flex flex-wrap gap-3" gap={2}>
                 {todos.filter(filteredtodo => filteredtodo.status === 'todo').map((todo) => {
                     return (

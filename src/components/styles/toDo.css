@@ -8,8 +8,6 @@
   cursor: pointer;
 }
 #list-containers{
-  background-image: url('../../assets/images/todo-back.jpg');
-  background-size: contain;
   height: auto;
 }
 .title-container{
@@ -22,6 +20,11 @@
 }
 #card{
   width: 100%;
+}
+#header-holder{
+  background-color: lightgrey;
+    padding: 15px 5px 0 15px;
+    border-radius: 8px;
 }
 @media screen and (min-width: 768px) {
   #card {

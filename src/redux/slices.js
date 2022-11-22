@@ -18,8 +18,9 @@ export const todo_reducer = createSlice({
     ],
     reducers: {
         addTodo: (state, action) => {
-            console.log(action.payload);
             action.payload.index = counter;
+            counter = counter + 1;
+            console.log('in slice : ', action.payload);
             state.push(action.payload);
         },
         markTodo: (state, action) => {

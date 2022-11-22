@@ -1,13 +1,11 @@
 import './App.css';
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { useSelector } from 'react-redux';
 import ToDoListItems from './components/TodoItems/TodoListItems';
 import AddEdit from './components/AddItem-Dialog/Add_Edit'
 import { useState } from "react";
 import DoingList from './components/DoingItems/DoingList'
 import DoneItems from './components/DoneItems/DoneItems'
-import Stack from 'react-bootstrap/Stack';
 
 function App() {
   const [popup, setpopup] = useState({
