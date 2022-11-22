@@ -23,9 +23,7 @@ export const todo_reducer = createSlice({
             console.log('in slice : ', action.payload);
             state.push(action.payload);
         },
-        markTodo: (state, action) => {
-            state[action.payload].isDone = true;
-        },
+        
         removeTodo: (state, action) => {
             let finedIndex = state.findIndex((element)=>element.index===action.payload)
             state.splice(finedIndex, 1);
@@ -41,6 +39,6 @@ export const todo_reducer = createSlice({
     },
 })
 
-export const { addTodo, markTodo, removeTodo, editStatus } = todo_reducer.actions;
+export const { addTodo, removeTodo, editStatus } = todo_reducer.actions;
 
 export default todo_reducer.reducer;
