@@ -1,0 +1,40 @@
+.todo {
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+  }
+.pointer-cursor{
+  cursor: pointer;
+}
+#list-containers{
+  background-image: url('../../assets/images/todo-back.jpg');
+  background-size: contain;
+  height: auto;
+}
+.title-container{
+  width: 70%;
+}
+.icon-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+#card{
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  #card {
+    width: 48%;
+  }
+}
+@media screen and (min-width: 992px) {
+  #card {
+    width: 49%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #card {
+    width: 32%;
+  }
+}

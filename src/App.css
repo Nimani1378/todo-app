@@ -1,4 +1,7 @@
 .app {
   padding: 30px;
-  background-color: floralwhite;
+}
+
+#logo{
+  width: 100%;
 }
