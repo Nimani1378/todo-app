@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="app">
       <div className="container">
-        <h1 className="text-center mb-4" id='logo'>TODO LIST</h1>
+        <h1 className="text-center my-2" id='logo'>TODO LIST</h1>
         <div className='d-flex flex-column gap-3' id='logo' direction="horizontal">
           <ToDoListItems setpopup={setpopup} />
           <DoingList setpopup={setpopup} />
